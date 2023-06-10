@@ -1,0 +1,126 @@
+.egg-body {
+    z-index: 50000;
+    display: block;
+    height: 250px;
+    width: 150px;
+    overflow: hidden;
+    background-image: radial-gradient(at 30% 30%, #ffd8b0, #f78a1b, #f78a1d);
+    border-radius: 75px 75px 75px 75px / 120px 120px 80px 80px;
+    position: relative;
+}
+
+.ribbon {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-top: 35px;
+    background-image: linear-gradient(to right, #f00, #f99, #f00);
+}
+
+.eyes-and-mouth {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.eye {
+    display: inline-block;
+    width: 18px;
+    height: 26px;
+    text-align: center;
+    background-color: white;
+    border-radius: 9px 9px 9px 9px / 13px 13px 13px 13px;
+    position: relative;
+    margin-top: 20px;
+}
+.eye::after{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    background-color: black;
+    margin-top: 7px;
+    border-radius: 6px 6px 6px 6px / 8px 8px 8px 8px;
+    position: relative;
+}
+
+.mouth{
+    display: block;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.left-arm{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    border: 5px solid black;
+    border-top: none;
+    border-right: none;
+    border-radius: 5px;
+    transform: rotateZ(30deg);
+}
+
+.left-arm::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #000;
+}
+
+.right-arm{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border: 5px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 5px;
+    transform: rotateZ(60deg);
+}
+
+.right-arm::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #000;
+}
+
+.legs{
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+
+.leg{
+    display: inline-block;
+    width: 20px;
+    height: 50px;
+    border: 5px solid black;
+    border-left: none;
+    border-top: none;
+    margin-top: -10px;
+    margin-right: 20px;
+}
